@@ -4,14 +4,16 @@
     <link rel="stylesheet" type="text/css" href="resume.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
     <meta charset="UTF-8">
     </meta>
+
+
 
 </head>
 
 <body>
     <div class="container">
+        <br>
         <div class="row">
             <div class="col">
                 <span class="txt-name">
@@ -21,11 +23,10 @@
                     </strong>
                 </span>
             </div>
-
             <div class="col text-end">
                 <span class="txt-1">
                     <i class="bi bi-briefcase"></i>
-                    Software Developer
+                    Software Developer                    
                 </span>
                 <br>
                 <span class="txt-1">
@@ -39,47 +40,54 @@
                     <a href="https://wa.me/3457702684"> <i class="bi bi-whatsapp"></i></a>
                     <a href="mailto:"> <i class="bi bi-envelope"></i></a>
                     <a href="https://www.medium.com/@davidedigrande94"> <i class="bi bi-medium"></i></a>
-                    <a href="https://www.instagram.com/davide.di.grande"> <i class="bi bi-instagram"></i></a>
                 </span>
-
             </div>
         </div>
         <hr>
         <div class="section">
             <div class="row">
                 <strong>
-                    <span class="txt-1">Bio</span>
+                    <span class="txt-1">Skills</span>
                 </strong>
             </div>
 
             <div class="section-box">
                 <span class="txt-2">
-                    Fascinated by technology since childhood, I studied ITC in school. After which I immediately began working as a Computer Technician in my own laboratory. Alongside, I gained a diverse range of experience in areas such as graphic design, music, sports, and customer service. As a young adult, I felt the need to broaden my knowledge and understand more about society, so I enrolled in university to study Economics. Although the subject was fascinating, I found later it lacked practicality. After taking the statistics exam, I was eager to learn more, so I got a scholarship for a bootcamp that ventured me into Data Analysis, reigniting my programming passion with Python. This exploration made me realize my potential and fueled my aspiration to become a developer. This journey has led me to where I am today, fully equipped and successfully expressing my skills on the field.
+                    Strong knowledge of <strong>Python</strong> language and its nuances, relative best practices for a clean, readable and Pythonic code.<br>Familiarity with modern technologies for <strong>Data Engineering</strong> and <strong>Backend Development</strong>.<br>Basic <strong>Frontend Development</strong> skills.<br>Experienced working with <strong>AWS</strong>.<br>Accustomed to think about software in <strong>Microservices</strong>.<br>I worked both <strong>alone and in team</strong>, in smaller projects and bigger projects.<br>
                 </span>
             </div>
         </div>
-
         <div class="section">
             <div class="row">
                 <strong>
-                    <span class="txt-1">Technical Skills</span>
+                    <span class="txt-1">Technologies I used</span>
                 </strong>
             </div>
 
             <div class="section-box">
                 <span class="txt-2">
-                    Strong knowledge of <strong>Python</strong> language and its nuances, relative best practices for a clean, readable and Pythonic code.<br>Familiarity with modern technologies for <strong>Data Engineering</strong> and <strong>Backend Development</strong>.<br>Basic <strong>Frontend Development</strong> skills.<br>Experienced working with <strong>AWS</strong>.<br>Accustomed to think about software in <strong>Microservices</strong>.<br>I worked both <strong>alone and in team</strong>, in smaller projects and bigger projects.<br><br>Technologies and libraries I worked with:<br>- <strong>FastAPI</strong>, <strong>Django</strong> for backend development.<br>- <strong>Pydantic</strong>, <strong>SQLAlchemy</strong>, <strong>dataclass</strong> for ORM/data modeling.<br>- <strong>PySpark</strong>, <strong>Pandas</strong>, <strong>RDFLib</strong>, for data manipulation.<br>- <strong>Requests</strong>, <strong>BeautifulSoup</strong>, <strong>Selenium</strong> for web automation.<br>- <strong>Docker</strong> for containerization.<br>- <strong>ElasticSearch</strong>, <strong>MongoDB</strong>, <strong>DynamoDB</strong> as document DBs.<br>- <strong>Postgres</strong> as relational DB.<br>- <strong>Jinja2</strong>, <strong>Bootstrap5</strong>, <strong>Plotly</strong> for frontend/dashboard Development.<br>
+                    - <strong>FastAPI</strong>, <strong>Django</strong> for backend development.<br>- <strong>Pydantic</strong>, <strong>SQLAlchemy</strong>, <strong>dataclass</strong> for ORM/data modeling.<br>- <strong>PySpark</strong>, <strong>Pandas</strong>, <strong>RDFLib</strong>, for data manipulation.<br>- <strong>Requests</strong>, <strong>BeautifulSoup</strong>, <strong>Selenium</strong> for web automation.<br>- <strong>Docker</strong> for containerization.<br>- <strong>ElasticSearch</strong>, <strong>MongoDB</strong>, <strong>DynamoDB</strong> as document DBs.<br>- <strong>Postgres</strong> as relational DB.<br>- <strong>Jinja2</strong>, <strong>Bootstrap5</strong>, <strong>Plotly</strong> for frontend/dashboard Development.<br>
                 </span>
             </div>
         </div>
-
         <div class="section">
             <div class="row">
                 <strong>
-                    <span class="txt-1">Work Experience</span>
+                    <span class="txt-1">
+                        Work Experience
+                        <span class="txt-3">[<span id="months-counter"></span> years total]</span>
+                    </span> 
+                    <script>
+                        var certainDate = new Date("2020-12-01");
+                        var today = new Date();
+                        var monthsPassed = (today.getFullYear() - certainDate.getFullYear()) * 12;
+                        monthsPassed -= certainDate.getMonth();
+                        monthsPassed += today.getMonth();
+                        yoe = monthsPassed / 12
+                        document.getElementById("months-counter").textContent = yoe.toString();
+                    </script>
                 </strong>
             </div>
-
             
             <div class="section-box">
                 <div class="row">
@@ -134,14 +142,12 @@
             </div>
             
         </div>
-
         <div class="section">
             <div class="row">
                 <strong>
                     <span class="txt-1">Certifications</span>
                 </strong>
             </div>
-
             
             <div class="section-box">
                 <div class="row">
@@ -170,14 +176,12 @@
             </div>
             
         </div>
-
         <div class="section">
             <div class="row">
                 <strong>
                     <span class="txt-1">Education</span>
                 </strong>
             </div>
-
             
             <div class="section-box">
                 <div class="row">
@@ -258,15 +262,12 @@
             </div>
             
         </div>
-
         <div class="section">
-
             <div class="row">
                 <strong>
                     <span class="txt-1">Personal Projects</span>
                 </strong>
             </div>
-
             <div class="row">
                 
                 <div class="col">
@@ -284,7 +285,6 @@
                     </div>
                 </div>
                 
-                
                 <div class="col">
                     <div class="section-box">
                         <strong>
@@ -300,42 +300,21 @@
                     </div>
                 </div>
                 
-                
             </div>
         </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row">
+        <div class="section">
+            <div class="row">
+                <strong>
+                    <span class="txt-1">Bio</span>
+                </strong>
+            </div>
             <div class="section-box">
                 <span class="txt-2">
-                    
+                    Fascinated by technology since childhood, I studied ITC in school. After which I immediately began working as a Computer Technician in my own laboratory. Alongside, I gained a diverse range of experience in areas such as graphic design, music, sports, and customer service. As a young adult, I felt the need to broaden my knowledge and understand more about society, so I enrolled in university to study Economics. Although the subject was fascinating, I found later it lacked practicality. After taking the statistics exam, I was eager to learn more, so I got a scholarship for a bootcamp that ventured me into Data Analysis, reigniting my programming passion with Python. This exploration made me realize my potential and fueled my aspiration to become a developer. This journey has led me to where I am today, fully equipped and successfully expressing my skills on the field.
                 </span>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>
