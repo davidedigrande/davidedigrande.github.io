@@ -6,48 +6,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <meta charset="UTF-8">
     </meta>
-
-
-
 </head>
 
 <body>
     <div class="container">
-        <br>
-        <div class="row">
+        <div class="row d-flex">
+            <!-- <div class="col-sm-auto">
+                <img src="https://media.licdn.com/dms/image/D4D03AQE-EbHVsQQr_g/profile-displayphoto-shrink_400_400/0/1686210194854?e=1691625600&v=beta&t=dxLCDj0RgSh1widPV0NT90icacZBE0w5srwdg6QZNto" class="img-responsive propic">
+            </div> -->
             <div class="col">
                 <span class="txt-name">
                     <strong>
                         Davide <br>
                         Di Grande
                     </strong>
-                </span>
+                </span><br>
+                <span class="txt-2"><i>“mental meandering and personal experimentation are sources of power, and head starts are overrated”</i> </span><br>
             </div>
-            <div class="col text-end">
-                <span class="txt-1">
-                    <i class="bi bi-briefcase"></i>
-                    Software Developer                    
-                </span>
-                <br>
-                <span class="txt-1">
-                    <i class="bi bi-geo-alt"></i>
-                    Palermo, Italy
-                </span>
-                <br>
-                <span class="txt-1">
-                    <a href="https://github.com/davidedigrande"> <i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/davide-di-grande-17bba01b8"> <i class="bi bi-linkedin"></i></a>
-                    <a href="https://wa.me/3457702684"> <i class="bi bi-whatsapp"></i></a>
-                    <a href="mailto:"> <i class="bi bi-envelope"></i></a>
-                    <a href="https://www.medium.com/@davidedigrande94"> <i class="bi bi-medium"></i></a>
-                </span>
+            <div class="col d-flex flex-column text-end">
+                <div class="row">
+                    <span class="txt-1">
+                        <i class="bi bi-briefcase"></i>
+                        Software Developer
+                    </span>
+                    <br>
+                    <span class="txt-1">
+                        <i class="bi bi-geo-alt"></i>
+                        Palermo, Italy
+                    </span>
+                </div>
+                <div class="row flex-grow-1 align-items-end">
+                    <span class="txt-1">
+                        <a href="https://github.com/davidedigrande"> <i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/davide-di-grande-17bba01b8"> <i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/3457702684"> <i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:"> <i class="bi bi-envelope"></i></a>
+                        <a href="https://www.medium.com/@davidedigrande94"> <i class="bi bi-medium"></i></a>
+                    </span>
+                </div>
             </div>
         </div>
-        <hr>
+        <hr class="hr-lm">
         <div class="section">
             <div class="row">
                 <strong>
-                    <span class="txt-1">Skills</span>
+                    <span class="txt-1">Technical Skills</span>
                 </strong>
             </div>
 
@@ -63,7 +66,6 @@
                     <span class="txt-1">Technologies I used</span>
                 </strong>
             </div>
-
             <div class="section-box">
                 <span class="txt-2">
                     - <strong>FastAPI</strong>, <strong>Django</strong> for backend development.<br>- <strong>Pydantic</strong>, <strong>SQLAlchemy</strong>, <strong>dataclass</strong> for ORM/data modeling.<br>- <strong>PySpark</strong>, <strong>Pandas</strong>, <strong>RDFLib</strong>, for data manipulation.<br>- <strong>Requests</strong>, <strong>BeautifulSoup</strong>, <strong>Selenium</strong> for web automation.<br>- <strong>Docker</strong> for containerization.<br>- <strong>ElasticSearch</strong>, <strong>MongoDB</strong>, <strong>DynamoDB</strong> as document DBs.<br>- <strong>Postgres</strong> as relational DB.<br>- <strong>Jinja2</strong>, <strong>Bootstrap5</strong>, <strong>Plotly</strong> for frontend/dashboard Development.<br>
@@ -75,17 +77,18 @@
                 <strong>
                     <span class="txt-1">
                         Work Experience
-                        <span class="txt-3">[<span id="months-counter"></span> years total]</span>
-                    </span> 
-                    <script>
-                        var certainDate = new Date("2020-12-01");
-                        var today = new Date();
-                        var monthsPassed = (today.getFullYear() - certainDate.getFullYear()) * 12;
-                        monthsPassed -= certainDate.getMonth();
-                        monthsPassed += today.getMonth();
-                        yoe = monthsPassed / 12
-                        document.getElementById("months-counter").textContent = yoe.toString();
-                    </script>
+                        <span class="txt-2"> &nbsp; <span id="months-counter"></span>
+                        </span>
+                        <script>
+                            var certainDate = new Date("2020-12-01");
+                            var today = new Date();
+                            var monthsPassed = (today.getFullYear() - certainDate.getFullYear()) * 12;
+                            monthsPassed -= certainDate.getMonth();
+                            monthsPassed += today.getMonth();
+                            yoe = parseInt(monthsPassed / 12);
+                            moe = monthsPassed - (yoe * 12);
+                            document.getElementById("months-counter").textContent = '[' + yoe.toString() + ' yrs. ' + moe.toString() + ' mos.]';
+                        </script>
                 </strong>
             </div>
             
@@ -109,7 +112,7 @@
                     </div>
                     <div class="col">
                         <span class="txt-2">
-                            Consultant at BMW Europe, working on a Cloud Data Platform <strong>AWS</strong> populated by many heterogeneous sources and rapidly changing requirements.<br>- Writing ETL scripts with <strong>AWS Glue</strong>, <strong>Python</strong> and <strong>PySpark</strong>.<br>- Writing <strong>Lambda</strong> functions to implement the business logic.<br>- Creating <strong>CloudFormation</strong> stacks.<br>- Used a series of other <strong>AWS technologies</strong> that support the main functionalities.<br>
+                            Consultant at <strong>BMW Europe</strong>, working on a Cloud Data Platform with <strong>AWS</strong> populated by many heterogeneous sources and constantly changing requirements.<br>- Writing ETL scripts with <strong>AWS Glue</strong>, <strong>Python</strong> and <strong>PySpark</strong>.<br>- Writing <strong>Lambda</strong> functions to implement related microservices.<br>- Creating <strong>CloudFormation</strong> stacks.<br>- Used a series of other <strong>AWS technologies</strong> that support the main functionalities.<br>
                         </span>
                     </div>
                 </div>
@@ -135,7 +138,7 @@
                     </div>
                     <div class="col">
                         <span class="txt-2">
-                            Developer at the R&D department.<br>Partecipated in building the company's Data Warehouse for ML Models and other data-centric projects:<br>- Full charge of the development of a data-centric web application, encompassing business logic formulation, technical design, and coding implementation.<br>- Design, development and maintainance of ETL flows for the Data Warehouse.<br>- Developing small web-apps as POCs.<br>- Supporting all other projects in the department.<br>
+                            Developer at the <strong>R&D</strong> department.<br>- Full charge of the development of a <strong>data-centric web application</strong>, encompassing business logic formulation, technical design, and coding implementation.<br>- Developing other smaller <strong>web-apps as POCs</strong>.<br>- Partecipated in building the company's <strong>Data Warehouse</strong> for ML Models training and other <strong>data-centric</strong> projects:<br>- Design, development and maintainance of <strong>ETL flows</strong> for the <strong>Data Warehouse</strong>.<br>- Supporting <strong>all other projects</strong> in the department.<br>
                         </span>
                     </div>
                 </div>
@@ -169,7 +172,7 @@
                     </div>
                     <div class="col">
                         <span class="txt-2">
-                            Entry-level certification that validates understanding of Cloud concepts, services, and basic architectural best practices. Covers cloud computing, AWS core services, security, pricing, and support.
+                            Certification that validates understanding of Cloud concepts, services, architectural best practices. Covers cloud computing, AWS core services, security, pricing, and support.
                         </span>
                     </div>
                 </div>
@@ -203,7 +206,7 @@
                     </div>
                     <div class="col">
                         <span class="txt-2">
-                            Intensive 250h bootcamp where I developed proficiency in Python, explored Descriptive and Inferential Statistics for complex data interpretation, and harnessed the power of Pandas for data manipulation. I strengthened my data mining and cleaning skills to ensure accurate and reliable datasets, and gained foundational knowledge of machine learning concepts, all underpinned by practical projects which applied this learning in real-world contexts.
+                            Intensive <strong>250h bootcamp</strong> where I developed proficiency in <strong>Python</strong>, deepened <strong>Descriptive and Inferential Statistics</strong> for complex data interpretation, and harnessed the power of <strong>Pandas</strong> for <strong>data manipulation</strong>. I strengthened my <strong>data mining and cleaning</strong> skills to ensure accurate and reliable datasets, and gained foundational knowledge of machine learning concepts, all underpinned by practical projects which applied this learning in real-world contexts.
                         </span>
                     </div>
                 </div>
@@ -305,14 +308,21 @@
         <div class="section">
             <div class="row">
                 <strong>
-                    <span class="txt-1">Bio</span>
+                    <span class="txt-1">About me</span>
                 </strong>
             </div>
             <div class="section-box">
+                <!-- <strong><span class="txt-2">Bio</span></strong><br> -->
                 <span class="txt-2">
                     Fascinated by technology since childhood, I studied ITC in school. After which I immediately began working as a Computer Technician in my own laboratory. Alongside, I gained a diverse range of experience in areas such as graphic design, music, sports, and customer service. As a young adult, I felt the need to broaden my knowledge and understand more about society, so I enrolled in university to study Economics. Although the subject was fascinating, I found later it lacked practicality. After taking the statistics exam, I was eager to learn more, so I got a scholarship for a bootcamp that ventured me into Data Analysis, reigniting my programming passion with Python. This exploration made me realize my potential and fueled my aspiration to become a developer. This journey has led me to where I am today, fully equipped and successfully expressing my skills on the field.
                 </span>
             </div>
+            <!-- <div class="section-box">
+                <strong><span class="txt-2">Personal interests</span></strong><br>
+                <span class="txt-2">
+                    With a vast range of passions and skills, I embody a multi-disciplinary approach, emphasizing breadth over depth in my personal and professional pursuits. My journey has been shaped by artistic creativity, technical acuity, and an unyielding curiosity that propels me towards continuous self-improvement.<br>Beginning with a natural talent for drawing, I soon discovered a love for music composition, mastering the keyboard and FL Studio sans formal training. This self-taught theme persisted in my affinity for IT and programming, leading to the creation of my own Tetris clone in Java and subsequent work as a computer technician.<br>From powerlifting to customer service, to freelance graphic design, each phase of my journey has been marked by a unique passion and a dedication to self-improvement. A strong interest in understanding societal constructs led me to economics at university, which eventually gave way to a career in software development, fueled by a newfound appreciation for Python.<br>A lifelong learner, I continue to nurture my interest in psychology and maintain an active lifestyle with yoga, slackline, and Crossfit. With 2.5 years of professional software development experience, I now merge my multifaceted background with technical proficiency. Inspired by the teachings of David Epstein, I subscribe to a horizontal model, pursuing a wide array of skills and experiences over hyperspecialization, cultivating a holistic understanding and approach in every endeavor.<br>
+                </span>
+            </div> -->
         </div>
     </div>
 </body>
