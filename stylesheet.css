@@ -1,0 +1,99 @@
+@media print {
+    @page {
+        margin: 2.5%;
+    }
+
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('fonts/fira/eot/FiraSans-Regular.eot');
+    src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+         url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+         url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+         url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');
+  }
+
+html {
+    font-size: 10pt;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.main-content {
+    max-width: 297mm;
+    place-items: center;
+}
+
+.section {
+    page-break-inside: avoid;
+}
+
+.section-box {
+    background-color: var(--secondary-color);
+    border-radius: 0.75rem;
+    padding-top: 1rem;
+}
+
+a:link { text-decoration: none; }
+
+a { color: inherit !important; }
+
+.tag {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 0.5rem;
+    padding: 0.125rem;
+    margin: 0.125rem;
+    display: inline-block;
+    font-size: 0.75rem;
+    border-style: solid;
+    border-width: thin;
+}
+
+.img {
+    height: 2rem;
+    border-radius: 1.5rem;
+}
+
+.half-br {
+    line-height: 50%;
+}
+
+.col {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.col-8 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.col-4 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.col-3 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.row-box {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+}
+
+.container-box {
+    max-width: 297mm;
+}
